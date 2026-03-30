@@ -1,52 +1,27 @@
-# PDF to Image Converter
+---
+title: Pdf to Single Image
+emoji: 📄
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: 4.20.0
+app_file: app.py
+pinned: false
+---
 
-A full-stack web application that converts PDF files into a single long vertical image.
+# PDF to Single Image Converter
+
+A simple yet powerful tool to convert all pages of a PDF file into a single, high-quality, vertical image. Built with Python, PyMuPDF, and Gradio. 
 
 ## Features
+- **High Resolution:** 200 DPI rendering for clear text and images.
+- **Single Image:** Merges all PDF pages into a single vertical strip.
+- **Fast:** Efficiently processes even large PDFs using 16GB RAM on Hugging Face Spaces.
+- **Privacy:** Files are processed on the server and not stored long-term.
 
-- Modern, clean, responsive frontend using Tailwind CSS
-- PDF file upload system with validation
-- Automatic conversion and download of PNG image
-- Error handling for invalid files and empty uploads
-- Backend API endpoint: POST /convert
-- Vertical image merging using Pillow
-- Deployment-ready for Render and Netlify
+## How to use
+1. Upload your PDF file.
+2. Click **Convert Now**.
+3. View and download the resulting PNG image.
 
-## Quick Start
-
-1. Clone this repository
-2. Create virtual environment: `python3 -m venv venv`
-3. Activate: `source venv/bin/activate`
-4. Install dependencies: `pip install -r requirements.txt`
-5. Run the app: `python app.py`
-6. Visit http://localhost:5000
-
-## Files
-
-- `app.py` - Flask backend with PDF to image conversion
-- `requirements.txt` - Dependencies (flask, pymupdf, pillow, gunicorn)
-- `index.html` - Frontend with Tailwind CSS
-
-## Deployment
-
-### Backend (Render)
-- Use gunicorn: `gunicorn app:app`
-- Add `web: gunicorn app:app` to Procfile
-
-### Frontend (Netlify)
-- Upload index.html directly
-- No build process required
-
-## Usage
-
-1. Upload a PDF file
-2. Click "Convert" button
-3. Wait for processing
-4. Automatically download converted PNG image
-
-## Requirements
-
-- Python 3.8+
-- PyMuPDF for PDF processing
-- Pillow for image manipulation
-- Flask for web framework
+Developed by Bidhan/Brinto.
